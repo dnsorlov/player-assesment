@@ -1,6 +1,6 @@
 # iTunes explorer
   
-####supported browsers
+#### supported browsers
 At least Chrome 73  
 
 #### supported features
