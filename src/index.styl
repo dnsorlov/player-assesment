@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,400');
+html, body, #root
+  height: 100%
+html
+  font-family: 'Titillium Web', sans-serif;
+  background-color #2a2e36
+  color #DDD
+
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+
+// helpers
+.h-loader
+  position: relative
+.h-loader:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: #07d;
+  border-bottom-color: #07d;
+  animation: spinner .8s ease infinite;
+}

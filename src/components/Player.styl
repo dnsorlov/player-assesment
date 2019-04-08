@@ -1,0 +1,53 @@
+.Player
+  position fixed
+  bottom: 0
+  left: 0
+  right: 0
+  flex 1 0 auto
+  background-color rgba(33, 33, 33, 0.7)
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 6px #08080873;
+  @media screen and (min-width: 959px)
+    position: relative
+    flex 1 0 500px
+    overflow auto
+
+  &__art
+    margin: 0 auto
+    flex: 0 0 25%;
+    align-items: center;
+    display: flex;
+    width: 100px
+    height: 100px
+
+  &__controls
+    display: flex
+    //height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin 24px auto
+
+  &__play-pause
+    width: 32px
+    height: 32px
+    margin 0 64px
+
+  &__prev-track
+  &__next-track
+    width: 26px
+    height: 26px
+
+  &__bar{}
+  &__songs
+    margin: 0 auto
+    flex: 1;
+    display: flex;
+    //justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10%;
+    box-sizing: border-box;
+  &__song
+    border-bottom: 1px solid rgba(255,255,255,.1)
+    padding 8px

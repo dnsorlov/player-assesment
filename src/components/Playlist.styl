@@ -1,0 +1,51 @@
+.Playlist
+  display: flex
+  flex-direction: column
+  height: 100%
+  width: 100%
+
+  @media screen and (min-width: 959px)
+    .App.hasTrackSelected &
+      max-width 500px
+
+  &__search
+    overflow hidden
+    display flex
+    padding 12px
+    position relative
+    flex 0 0 auto
+    font-size 22px
+    .App:not(.hasTrackSelected) &
+      margin: auto;
+      width: 100%;
+      max-width: 500px;
+
+
+  &__input
+    background-color transparent
+    padding 4px
+    border none
+    flex 1
+    overflow scroll
+    color white
+    font-weight: 200
+    margin-right 22px
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    outline none
+    &::placeholder
+      color rgba(255,255,255,.4)
+
+  &__search-button
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 6px;
+    font-weight: 200;
+    color: rgba(255,255,255,.6);
+    padding-bottom: 1px
+    cursor: pointer
+
+
+  &__list
+    overflow auto
